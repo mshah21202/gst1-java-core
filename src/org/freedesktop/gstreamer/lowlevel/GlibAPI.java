@@ -37,7 +37,7 @@ import org.freedesktop.gstreamer.glib.GSource;
  */
 @SuppressWarnings("serial")
 public interface GlibAPI extends Library {
-    GlibAPI GLIB_API = GNative.loadLibrary("glib-2.0", GlibAPI.class,
+    GlibAPI GLIB_API = GNative.loadLibrary("glib-2.0-0", GlibAPI.class,
             new HashMap<String, Object>() {{
                 put(Library.OPTION_TYPE_MAPPER, new GTypeMapper());
             }});
